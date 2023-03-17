@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Table</title>
+        <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-left: 350px;
+            font-weight: 500;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            background-color: #71c5ec;
+        }
+        .container img{
+            height: 90px;
+            width: auto;
+            flex-direction: column;
+        }
+
+        .navbar{
+            background-color: #94d7f5;
+            padding: 12px;
+        }
+        .navbar ul 
+        {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            font-size: 20px;
+            justify-content: space-evenly;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .items li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .left{
+            display: flex;
+            justify-content: row;
+            padding: 25px;
+            width: 100px;
+            background-color: #4fd8fa;
+        }
+        
+        .left ul{
+            list-style: none;
+            font-size: 20px;
+        }
+        .left ul li{
+            justify-content: space-around;
+            padding-bottom: 23px ;
+        }
+        .copyright{
+            width: auto ;
+            text-align: center;
+            padding: 23px ;
+            background:#71c5ec;
+            font-weight: 300;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            top:30%;
+            left:30%;
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            position: absolute;
+            padding-left: 10px;
+            justify-content: center;
+        }
+        .sec{
+            display:flex;
+        }
+        .tag{
+            text-align: center;
+            padding-bottom: 20px;   
+            font-size: 28px;
+        }
+        .time-table{
+            justify-content: center;
+            border: solid #71c5ec 2px;
+        }
+        .time-table tr td{
+            column-gap: 5cm;
+            border: solid #71c5ec 2px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container ">
+            <img src="images.jpeg" alt="" sizes="" srcset="">
+            <h1>Chandubhai S Patel Institute Of Technology</h1>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul class="items">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Departments</a></li>
+                    <li> <a href="">Faculty</a> </li>
+                    <li> <a href="">Library</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sec">
+            <section class="left">
+                <nav>
+                    <ul class="items">
+                        <li><a href="">Practical-1</a></li>
+                        <li><a href="">Practical-2</a></li>
+                        <li> <a href="">Practical-3</a> </li>
+                        <li> <a href="">Practical-4</a> </li>
+                        <li> <a href="">Practical-5</a> </li>
+                        <li> <a href="">Practical-6</a> </li>
+                        <li> <a href="">Practical-7</a> </li>
+                        <li> <a href="">Practical-8</a> </li>
+                        <li> <a href="">Practical-9</a> </li>
+                        <li> <a href="">Practical-10</a> </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="right">
+                <h1 class="tag">Home</h1>
+                <table class="time-table">
+                    <thead>
+                        <tr>
+                            <th>Time/Day</th>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                        </tr>
+                    </tdead>
+                    <tbody>
+                        <tr>
+                            <td>9:10 to 10:10</td>
+                            <td>SGP LAB</td>
+                            <td>DBMS</td>
+                            <td>HS</td>
+                            <td>DBMS</td>
+                            <td>MCO</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>10:10 to 11:10</td>
+                            <td>SGP LAB</td>
+                            <td>MCO</td>
+                            <td>HS</td>
+                            <td>MCO</td>
+                            <td>DBMS</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>12:10 to 1:10</td>
+                            <td>DBMS LAB</td>
+                            <td>DSA</td>
+                            <td>DBMS LAB</td>
+                            <td>PIP LAB</td>
+                            <td>SGP LAB</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>1:10 to 2:10</td>
+                            <td>DBMS LAB</td>
+                            <td>DBMS</td>
+                            <td>DBMS LAB</td>
+                            <td>PIP LAB</td>
+                            <td>SGP LAB</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2:20 to 3:10</td>
+                            <td>DSA</td>
+                            <td>MCO LAB</td>
+                            <td>MCO</td>
+                            <td>DSA LAB</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3:20 to 4:20</td>
+                            <td>-</td>
+                            <td>MCO LAB</td>
+                            <td>DSA</td>
+                            <td>DSA LAB</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 </section>
+        </div>
+        <div class="copyright">
+            <p class="copyrightt">Prepared by 21CE137 Keval Solanki
+                Computer Engineering</p>
+        </div>
+    </body>
+</html>
